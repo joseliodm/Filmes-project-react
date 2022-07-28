@@ -44,6 +44,8 @@ const BlogDetails = () => {
             <h1>{blog.title}</h1>
             <p><h3>Autor:</h3>{blog.author}</p>
             <p><h3>Descrição:</h3>{blog.body}</p>
+            <p><h3>Data:</h3>{blog.date}</p>
+            <p><h3>Avaliação:</h3>{blog.avaliacao}</p>
             <button className="atualizar" onClick={handleSubmit}>Atualizar</button>
             <button className="delete" onClick={handleDelete}>Deletar</button>
             <button className="voltar" onClick={() => history.push("/")}>Voltar</button>
