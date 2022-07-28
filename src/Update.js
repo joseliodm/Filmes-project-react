@@ -57,6 +57,10 @@ const Update = () => {
                 
                 <textarea className="update-input" value={blog.body} onChange={e => setBlog({ ...blog, body: e.target.value })} />
 
+                <input type="text" className="update-input" value={blog.date} onChange={e => setBlog({ ...blog, date: e.target.value })} />
+
+                <input type="text" className="update-input" value={blog.avaliacao} onChange={e => setBlog({ ...blog, avaliacao: e.target.value })} />
+
                 <input type="text" className="update-input"  value={blog.image} onChange={e => setBlog({ ...blog, image: e.target.value })} />
 
                 <button className="atualizado" type="submit">Atualizar</button>
